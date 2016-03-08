@@ -49,9 +49,6 @@ Quasi-Wanna-Be Web Developer @GA in Seattle
 /* BASE STYLES
 /*******************************************/
 
-* {
-   border: 1px solid red !important;
-}
 
 body {
 
@@ -63,6 +60,8 @@ body {
   border: 1px solid #FFF;
 }
 
+
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -73,8 +72,7 @@ body {
 
 #pagecontainer {
   display: block;
-
-  background-color: #606161;
+  
 
 
 }
@@ -84,9 +82,12 @@ body {
 
 #header {
   display: block; 
+  width: 100%;
   line-height: 100px;
+  padding: 100px; 
   background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
   background-size: cover;
+  max-height: 600px;
   text-align: center;
   margin: 0px;
 
@@ -98,9 +99,7 @@ body {
     margin-top: 0px;
     text-align: left;
     border: 0px;
-    margin-left: 100px;
-    margin-bottom: 30px;
-   
+    padding-top: 0px;
 
 }
 
@@ -115,7 +114,6 @@ h1 {
   font-weight: 600;  
   margin: 0px;
   text-align: center;
-  /**how can I add font color here vs. in html?**/
 
 }
 
@@ -142,13 +140,17 @@ h1 {
   font-weight: 800;  
   border-radius: 5px;
   background-color: #f9e42e;
-  margin: 20px 500px 50px 500px;
-  max-height: 10px;
-  padding-bottom: 130px;
+  width: 10%;
 
 }
 
-  
+button {
+  width: 50px;
+  height: 50px;
+  background: #f9e42e;
+
+}
+
 .amanda {
   font-size: 18px;
   font-weight: 600;  
@@ -200,7 +202,7 @@ ul {
   text-align: center;
   border: 1px solid #aaa;
   padding: 20px 200px 20px 200px; 
-  
+
 }
 
 #footer {
